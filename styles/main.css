@@ -5,8 +5,14 @@
 *::before,
 *::after {
     box-sizing: border-box;
+    margin: 0;
 }
 
-body {
-    margin: 0;
+/* For style scrollbar - remove it */
+html {
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
+
+::-webkit-scrollbar { /* For other browsers */
+    display: none;
 }
