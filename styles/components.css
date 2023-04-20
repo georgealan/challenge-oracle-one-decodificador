@@ -1,16 +1,16 @@
 @import url(colors.css);
 
-/* TODO: NEED ORGANIZE ALL THIS ATRIBUTS */
 #header {
     padding: 0.2em 2em 0.2em 2em;
-    /* background: red; */
     width: 100vw;
-    height: 48px;  
+    height: 48px;
+    background-color: var(--cl-bg-menu-navigation);
+    border-bottom: 2px solid var(--cl-200);
 }
 
 .nav {
     display: flex;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 #logout-link {
@@ -35,7 +35,7 @@
     width: 35vw;
     height: 95vh;
     padding: 0 1em;
-    background-color: bisque;
+    background-color: var(--cl-bg-system-boxes);
 }
 
 #encrypted,
@@ -65,14 +65,15 @@
     width: 65vw;
     height: 95vh;
     padding: 1em 2em;
-    background-color: antiquewhite;
+    background-color: var(--cl-bg-main-content);
 }
 
 .box-text {
-    background-color: azure;
+    background-color: var(--cl-bg-box-text);
     margin: 0 0 1em 0;
     padding: 0.7em;
     border-radius: 0.5em;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }    
 
 .text-encrypt {
@@ -119,16 +120,59 @@
     background: transparent;
 }
 
-.view:hover,
-.copy:hover,
-.remove:hover {
-    /* background: red; */
+.copy {
+    margin: 0 0.4em;
 }
 
-.view:active,
-.copy:active,
-.remove:active {
-    /* background: blue; */
+button {
+    border: none;
+    padding: 1em 1.4em;
+    cursor: pointer;
+    background-color: var(--primary);
+    border-radius: 0.5em;
+    color: var(--cl-100);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+
+button:hover {
+    background-color: var(--cl-button-hover);
+    transition: background-color 500ms;
+}
+
+button:active {
+    transform: scale(0.90);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+button i {
+    margin: 0 0.5em 0 0;
+}
+
+input[type=submit] {
+    border: none;
+    padding: 1em 1.4em;
+    cursor: pointer;
+    background-color: var(--primary);
+    border-radius: 0.5em;
+    color: var(--cl-100);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+
+input[type=submit]:hover {
+    background-color: var(--cl-button-hover);
+    transition: background-color 500ms;
+}
+
+input[type=submit]:active {
+    transform: scale(0.97);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+/* TEXTAREA */
+textarea {
+    background-color: var(--cl-bg-textarea);
+    border: 1px solid var(--cl-300);
+    padding: 0.5em;
 }
 
 /* MODAL */
@@ -186,71 +230,36 @@ textarea:focus {
     outline: none;
 }
 
-.wrapper {
-    display: flex;
+
+/* ###### MAIN CONTENT LOGIN PAGE ###### */
+#main-login-page {
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
+    display: flex;
+}
+
+.form-container {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
     align-items: center;
     justify-content: center;
-    /* DARK GRADIENT FOR DARK THEME */
-    /* background-image: linear-gradient(
-    270deg,
-    hsl(276deg 100% 26%) 0%,
-    hsl(276deg 98% 25%) 19%,
-    hsl(276deg 97% 24%) 27%,
-    hsl(275deg 95% 23%) 34%,
-    hsl(275deg 93% 22%) 41%,
-    hsl(275deg 91% 21%) 47%,
-    hsl(274deg 88% 20%) 53%,
-    hsl(274deg 88% 19%) 59%,
-    hsl(273deg 85% 18%) 66%,
-    hsl(274deg 84% 17%) 73%,
-    hsl(273deg 81% 16%) 81%,
-    hsl(273deg 79% 15%) 100%
-    ); */
-
-    /* LIGHT GRADIENT FOR LIGHT THEME */
-    background-image: linear-gradient(
-    270deg,
-    hsl(276deg 82% 87%) 0%,
-    hsl(277deg 82% 87%) 13%,
-    hsl(277deg 81% 87%) 19%,
-    hsl(276deg 81% 88%) 24%,
-    hsl(277deg 80% 88%) 28%,
-    hsl(276deg 83% 89%) 32%,
-    hsl(277deg 82% 89%) 35%,
-    hsl(277deg 81% 89%) 39%,
-    hsl(277deg 81% 90%) 42%,
-    hsl(276deg 80% 90%) 45%,
-    hsl(277deg 80% 90%) 48%,
-    hsl(277deg 79% 91%) 52%,
-    hsl(278deg 78% 91%) 55%,
-    hsl(277deg 81% 92%) 58%,
-    hsl(276deg 80% 92%) 61%,
-    hsl(277deg 79% 92%) 65%,
-    hsl(277deg 78% 93%) 68%,
-    hsl(278deg 77% 93%) 72%,
-    hsl(278deg 76% 94%) 76%,
-    hsl(276deg 81% 94%) 81%,
-    hsl(277deg 79% 94%) 87%,
-    hsl(277deg 78% 95%) 100%
-    );
+    background-color: var(--cl-200);
 }
 
-/* MAIN CONTENT LOGIN PAGE */
-#main-login-page {
+.presentation-container {
+    width: 50vw;
+    height: 100vh;
     display: flex;
-    width: 90vw;
     align-items: center;
-}
-
-.login-img {
-    width: 50%;
-    height: auto;
+    justify-content: center;
+    background-image: url('/assets/images/login-left-img.svg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .img-padlock {
-    max-width: 660px;
+    max-width: 70%;
     height: auto;
 }
 
@@ -258,46 +267,32 @@ textarea:focus {
     width: 50px;
 }
 
-/* FOOTER LOGIN PAGE */
-footer {
-    display: flex;
-    width: 100vw;
-    height: 60px;
-    background-color: black;
-    color: #fff;
-    align-items: center;
-    padding: 0 2em;
-}
-
-footer nav {
-    margin-left: auto;
-}
-
 .form {
     display: flex;
     flex-direction: column;
-    background: #fff;
-    border-radius: 0.5em;
-    padding: 1.5em;
-    max-width: 350px;
-    margin: 0 auto;
+    width: 90%;
+    max-width: 453px;
 }
 
 .form input {
-    margin: 1.5em 0 0.5em 0;
-    padding: 1em;
-    border-radius: 0.5em;
+    margin: 0 0 1.5em 0;
+    padding: 1.4em;
+    border-radius: 0.4em;
 }
 
-.form-container {
-    width: 50vw;
+.form-header {
+    margin: 0 0 1em 0;
 }
 
 #signin-error-alert {
     padding: 1.2em;
     background-color: rgb(247, 199, 199);
     border: 2px solid rgb(243, 127, 127);
+    border-radius: 0.4em;
+    margin-top: 0.5em;
 }
+
 .fa-circle-xmark {
     color: rgb(236, 92, 92);
+    margin-right: 0.4em;
 }

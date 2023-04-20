@@ -1,0 +1,43 @@
+:root {
+    /* HSL Monochromatic color scheme */
+    --primary: hsl(276, 100%, 57%);
+    --cl-900: hsl(276, 77%, 8%);
+    --cl-800: hsl(275, 62%, 12%);
+    --cl-700: hsl(276, 62%, 25%);
+    --cl-600: hsl(276, 30%, 50%);
+    --cl-500: hsl(276, 52%, 70%);
+    --cl-400: hsl(276, 76%, 84%);
+    --cl-300: hsl(276, 71%, 93%);
+    --cl-200: hsl(277, 100%, 97%);
+    --cl-100: hsl(0, 0%, 100%);
+
+    --cl-body-font: var(--cl-800);
+    --cl-header-font: var(--cl-800);
+    --cl-bg-menu-navigation: var(--cl-100);
+    --cl-bg-system-boxes: hsl(270, 17%, 98%);
+    --cl-bg-box-text: var(--cl-100);
+    --cl-bg-main-content: var(--cl-100);
+    --cl-button-hover: hsl(276, 76%, 44%);
+    --cl-bg-textarea: hsl(270, 17%, 98%);
+}
+
+.dark-theme {
+    --primary: hsl(276, 100%, 57%);
+    --cl-900: hsl(270, 8%, 5%);
+    --cl-800: hsl(270, 8%, 9%);
+    --cl-700: hsl(270, 6%, 14%);
+    --cl-600: hsl(270, 5%, 22%);
+    --cl-500: hsl(274, 4%, 32%);
+    --cl-400: hsl(276, 5%, 63%);
+    --cl-300: hsl(277, 7%, 78%);
+    --cl-200: hsl(276, 12%, 92%);
+    --cl-100: hsl(0, 0%, 100%);
+    
+    --cl-body-font: var(--cl-300);
+    --cl-header-font: var(--cl-300);
+    --cl-bg-menu-navigation: hsl(275, 62%, 12%);
+    --cl-bg-system-boxes: var(--cl-700);
+    --cl-bg-box-text: var(--cl-800);
+    --cl-bg-main-content: var(--cl-800);
+
+}

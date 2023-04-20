@@ -1,1 +1,90 @@
 @import url(colors.css);
+@import url(fonts.css);
+
+/* #### ALL DOCUMENT #### */
+body {
+    font-family: 'Roc Grotesk Regular';
+    font-size: 18px;
+    line-height: 1.6em;
+    color: var(--cl-body-font);
+}
+
+/* #### HEADERS, TITLES #### */
+h1 {
+    font-size: 1.5em;
+    line-height: 0.9em;
+}
+
+h2 {
+    font-size: 1.3em;
+}
+
+h3 {
+    font-size: 1.1em;
+}
+
+h4 {
+    font-size: 0.7em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0 0 0.3em 0;
+    color: var(--cl-header-font);
+    line-height: 1.2em;
+    font-family: 'Aktiv Grotesk Ex Regular';
+}
+
+.box-saved-title {
+    font-size: 1.1em;
+}
+
+/* #### LINKS #### */
+a {
+    color: inherit;
+    transition: color 300ms;
+}
+
+a:hover {
+    text-decoration-color: var(--cl-body-font);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--cl-body-font);
+}
+
+nav a:active, 
+a:hover {
+    color: var(--primary);
+}
+
+.buttons-wrapp .icon:hover,
+.icon:active {
+    color: var(--primary);
+    transition: color 300ms;
+}
+
+.box-saved-title .icon,
+.box-saved-date .icon {
+    margin: 0 0.5em 0 0;
+}
+
+/* #### BUTTONS #### */
+button {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+input[type=submit] {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* #### FORMS #### */
+textarea {
+    font-size: 1.2em;
+    color: var(--cl-800);
+}

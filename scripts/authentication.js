@@ -82,7 +82,6 @@ function signIn(e) {
     let inputPassword = document.getElementById('si-password').value;
     let user = JSON.parse(localStorage.getItem(inputUserName));
 
-    /* TODO Implement alert functionality for user know that password are wrong */
     if(user === null) {
         errorAlert.classList.remove('hide');
         setTimeout(() => {

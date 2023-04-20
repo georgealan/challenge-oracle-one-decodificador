@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Aktiv Grotesk Ex Bold';
+    src: url('../assets/fonts/aktivgroteskex-bold.eot');
+    src: url('../assets/fonts/aktivgroteskex-bold.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/aktivgroteskex-bold.woff2') format('woff2'),
+         url('../assets/fonts/aktivgroteskex-bold.woff') format('woff'),
+         url('../assets/fonts/aktivgroteskex-bold.svg#aktiv_grotesk_exbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aktiv Grotesk Ex Regular';
+    src: url('../assets/fonts/aktivgroteskex-regular.eot');
+    src: url('../assets/fonts/aktivgroteskex-regular.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/aktivgroteskex-regular.woff2') format('woff2'),
+         url('../assets/fonts/aktivgroteskex-regular.woff') format('woff'),
+         url('../assets/fonts/aktivgroteskex-regular.svg#aktiv_grotesk_exregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aktiv Grotesk Ex Semibold';
+    src: url('../assets/fonts/aktivgroteskex-semibold.eot');
+    src: url('../assets/fonts/aktivgroteskex-semibold.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/aktivgroteskex-semibold.woff2') format('woff2'),
+         url('../assets/fonts/aktivgroteskex-semibold.woff') format('woff'),
+         url('../assets/fonts/aktivgroteskex-semibold.svg#aktiv_grotesk_exsemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roc Grotesk Regular';
+    src: url('../assets/fonts/roc-grotesk-regular.eot');
+    src: url('../assets/fonts/roc-grotesk-regular.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/roc-grotesk-regular.woff2') format('woff2'),
+         url('../assets/fonts/roc-grotesk-regular.woff') format('woff'),
+         url('../assets/fonts/roc-grotesk-regular.ttf') format('truetype'),
+         url('../assets/fonts/roc-grotesk-regular.svg#roc_groteskregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

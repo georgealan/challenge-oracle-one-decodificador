@@ -12,47 +12,43 @@
     <title>TxCrypt Home</title>
 </head>
 <body>
-    <header id="header">
-        <nav id="navigation" class="nav">
-            <img class="logo-icon" src="assets/images/Logo-TxCrypt.svg" alt="TxCrypt logo"><span class="logo-text">TxCrypt</span>
-            <a id="logout-link" class="hide" href="#">Logout</a>
-            <img id="icon-toggle-theme" src="assets/icons/moon.svg" alt="icon image of sun and moon to change site theme to dark or light">
-        </nav>
-    </header>
+    <main id="main-login-page">
+        <div class="presentation-container">
+            <!-- <img class="img-padlock" src="assets/images/login-img.svg"> -->
+        </div>
 
-    <div class="wrapper">
-        <main id="main-login-page">
-            <div class="login-img">
-                <img class="img-padlock" src="assets/images/login-img.svg">
-            </div>
-
-            <div class="form-container">
-                <form onsubmit="signIn()" id="sign-in" class="form">
-                    <h2>Sign In</h2>
-                    <input type="text" placeholder="User Name" id="si-user-name" required>
-                    <input type="password" placeholder="Password" id="si-password" required>
-                    <input type="submit" value="Sign In">
-                    <p class="text-sign-up">Don't have an account yet?<a href="#" id="sign-up-link">Sign Up Now!</a></p>
-                    <div id="signin-error-alert" class="hide"><i class="fa-solid fa-circle-xmark"></i>Username or password are incorrect</div>
-                </form>
-                <form onsubmit="signUp()" id="sign-up" class="form hide">
-                    <h2>Sign Up</h2>
-                    <input type="text" name="username" placeholder="User Name" id="su-user-name" onchange="verifyIfUserAlreadyExist()" required>
-                    <input type="password" name="password" placeholder="Password" onchange="passwordMatch()" required>
-                    <input type="password" name="confirm" placeholder="Confirm Password" onchange="passwordMatch()" required>
-                    <input type="submit" value="Sign Up">
-                    <p class="text-sign-in">Already have an account?<a href="#" id="sign-in-link">Sign In Now!</a></p>
-                </form>
-            </div>
-        </main>
-    </div>
-        <footer>
+        <div class="form-container">
+            <form onsubmit="signIn()" id="sign-in" class="form">
+                <h2 class="form-header">Sign In</h2>
+                <label for="si-user-name" class="label">User Name*</label>
+                <input type="text" placeholder="User Name" id="si-user-name" required>
+                <label for="si-password" class="label">Password*</label>
+                <input type="password" placeholder="Password" id="si-password" required>
+                <input type="submit" value="Sign In">
+                <p class="text-sign-up">Don't have an account yet?<a href="#" id="sign-up-link">Sign Up Now!</a></p>
+                <div id="signin-error-alert" class="hide"><i class="fa-solid fa-circle-xmark"></i>Username or password are incorrect</div>
+            </form>
+            <form onsubmit="signUp()" id="sign-up" class="form hide">
+                <h2 class="form-header">Sign Up</h2>
+                <label for="su-user-name" class="label">User Name*</label>
+                <input type="text" name="username" placeholder="User Name" id="su-user-name" onchange="verifyIfUserAlreadyExist()" required>
+                <label for="password" class="label">Password*</label>
+                <input type="password" name="password" placeholder="Password" onchange="passwordMatch()" required>
+                <label for="confirm" class="label">Confirm Password*</label>
+                <input type="password" name="confirm" placeholder="Confirm Password" onchange="passwordMatch()" required>
+                <input type="submit" value="Sign Up">
+                <p class="text-sign-in">Already have an account?<a href="#" id="sign-in-link">Sign In Now!</a></p>
+            </form>
+        </div>
+    </main>
+    
+        <!-- <footer>
             <p>&copy <span id="year"></span> George Alan - Challenge Alura - Oracle One</p>
             <nav>
                 <a href="https://www.linkedin.com/in/george-alan-fullstack-developer/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="https://github.com/georgealan" target="_blank"><i class="fa-brands fa-github"></i></i></a>
             </nav>
-        </footer>
+        </footer> -->
     
     <script src="scripts/app.js" type="text/javascript"></script>
     <script src="scripts/authentication.js" type="text/javascript"></script>
