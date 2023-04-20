@@ -78,6 +78,10 @@ button {
     text-transform: uppercase;
 }
 
+.btn-close-modal {
+    margin-left: 2em;
+}
+
 input[type=submit] {
     font-weight: 600;
     text-transform: uppercase;
@@ -86,5 +90,5 @@ input[type=submit] {
 /* #### FORMS #### */
 textarea {
     font-size: 1.2em;
-    color: var(--cl-800);
+    color: var(--cl-body-font);
 }

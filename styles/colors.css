@@ -13,12 +13,14 @@
 
     --cl-body-font: var(--cl-800);
     --cl-header-font: var(--cl-800);
+    --cl-border-nav: var(--cl-200);
     --cl-bg-menu-navigation: var(--cl-100);
     --cl-bg-system-boxes: hsl(270, 17%, 98%);
     --cl-bg-box-text: var(--cl-100);
     --cl-bg-main-content: var(--cl-100);
     --cl-button-hover: hsl(276, 76%, 44%);
     --cl-bg-textarea: hsl(270, 17%, 98%);
+    --cl-border-textarea: var(--cl-300);
 }
 
 .dark-theme {
@@ -33,11 +35,14 @@
     --cl-200: hsl(276, 12%, 92%);
     --cl-100: hsl(0, 0%, 100%);
     
-    --cl-body-font: var(--cl-300);
-    --cl-header-font: var(--cl-300);
-    --cl-bg-menu-navigation: hsl(275, 62%, 12%);
-    --cl-bg-system-boxes: var(--cl-700);
+    --cl-body-font: var(--cl-200);
+    --cl-header-font: var(--cl-200);
+    --cl-border-nav: var(--cl-700);
+    --cl-bg-menu-navigation: var(--cl-900);
+    --cl-bg-system-boxes: var(--cl-900);
     --cl-bg-box-text: var(--cl-800);
     --cl-bg-main-content: var(--cl-800);
-
+    --cl-button-hover: hsl(276, 76%, 44%);
+    --cl-bg-textarea: var(--cl-700);
+    --cl-border-textarea: var(--cl-600);
 }
