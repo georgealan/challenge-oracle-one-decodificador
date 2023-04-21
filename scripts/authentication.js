@@ -89,7 +89,7 @@ function signIn(e) {
         }, 2000);
     } else if(user.username === inputUserName && user.password === inputPassword) {
         localStorage.setItem('userLogged', user.username);
-        window.location.href = '/system.html';
+        window.location.href = 'https://georgealan.github.io/challenge-oracle-one-decodificador/system.html';
     } else {
         errorAlert.classList.remove('hide');
         setTimeout(() => {
