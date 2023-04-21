@@ -124,6 +124,10 @@
     margin: 0 0.4em;
 }
 
+.btn {
+    margin-right: 1.2em;
+}
+
 button {
     border: none;
     padding: 1em 1.4em;
@@ -175,6 +179,10 @@ textarea {
     padding: 0.5em;
 }
 
+.textarea-btn {
+    margin-top: 1em;
+}
+
 /* MODAL */
 .modal {
     padding: 0 1em 1em 1em;
@@ -186,10 +194,12 @@ textarea {
     border-radius: 0.5em;
     z-index: 999;
     box-shadow: 0 0 1em rgb(0 0 0 / .3);
+    background: var(--cl-bg-modal);
+    color: var(--cl-body-font);
 }
 
 .modal-header {
-    background: #fff;
+    background: var(--cl-bg-modal);
     position: sticky;
     display: flex;
     top: 0;
@@ -217,13 +227,17 @@ dialog::backdrop {
     align-self: center;
 }
 
+.textarea-result {
+    margin-top: 1em;
+}
+
 .invalid {
-    border: 2px solid red;
-    background-color: rgb(255, 188, 188);
+    border: 2px solid var(--cl-error-border);
+    background-color: var(--cl-error);
 }
 
 #error-message {
-    color: red;
+    color: var(--cl-error-text);
 }
 
 textarea:focus {
@@ -286,13 +300,13 @@ textarea:focus {
 
 #signin-error-alert {
     padding: 1.2em;
-    background-color: rgb(247, 199, 199);
-    border: 2px solid rgb(243, 127, 127);
+    background-color: var(--cl-error);
+    border: 2px solid var(--cl-error-border);
     border-radius: 0.4em;
     margin-top: 0.5em;
 }
 
 .fa-circle-xmark {
-    color: rgb(236, 92, 92);
+    color: var(--cl-error-border);
     margin-right: 0.4em;
 }

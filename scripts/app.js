@@ -10,7 +10,9 @@ let textInput = document.getElementById('text-input');
 let errorMessage = document.getElementById('error-message');
 const spanYear = document.getElementById('year');
 const linkLogout = document.getElementById('logout-link');
+const systemGreetings = document.getElementById('system-greetings');
 let tagEncryptOrDecrypt = '';
+let welcomeText = '';
 
 /* Date and Hour */
 let today = new Date();
@@ -421,6 +423,19 @@ function createEventListener() {
         localStorage.setItem('userLogged', '');
         window.location.replace('/');
     });
+
+    /* Welcome Text when user log in */
+    if(today.getHours() > 0 && today.getHours() <= 5) {
+        welcomeText = 'Good evening my friend ' + userLoggedName + '! welcome to the system';
+    } else if(today.getHours() > 5 && today.getHours() <= 12) {
+        welcomeText = 'Good morning my friend ' + userLoggedName + '! welcome to the system';
+    } else if(today.getHours() > 12 && today.getHours() <= 18) {
+        welcomeText = 'Good afternoon my friend ' + userLoggedName + '! welcome to the system';
+    } else if(today.getHours() > 18 && today.getHours() <= 23) {
+        welcomeText = 'Good evening my friend ' + userLoggedName + '! welcome to the system';
+    }
+    
+    systemGreetings.innerText = welcomeText;
 }
 
 window.onload = function() { 
