@@ -425,7 +425,7 @@ function createEventListener() {
     });
 
     /* Welcome Text when user log in */
-    if(today.getHours() > 0 && today.getHours() <= 5) {
+    if(today.getHours() >= 0 && today.getHours() <= 5) {
         welcomeText = 'Good evening my friend ' + userLoggedName + '! welcome to the system';
     } else if(today.getHours() > 5 && today.getHours() <= 12) {
         welcomeText = 'Good morning my friend ' + userLoggedName + '! welcome to the system';

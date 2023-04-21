@@ -25,7 +25,7 @@
                 <label for="si-password" class="label">Password*</label>
                 <input type="password" placeholder="Password" id="si-password" required>
                 <input type="submit" value="Sign In">
-                <p class="text-sign-up">Don't have an account yet?<a href="#" id="sign-up-link">Sign Up Now!</a></p>
+                <p class="text-sign-up">Don't have an account yet?<a id="sign-up-link">Sign Up Now!</a></p>
                 <div id="signin-error-alert" class="hide"><i class="fa-solid fa-circle-xmark"></i>Username or password are incorrect</div>
             </form>
             <form onsubmit="signUp()" id="sign-up" class="form hide">
@@ -37,7 +37,7 @@
                 <label for="confirm" class="label">Confirm Password*</label>
                 <input type="password" name="confirm" placeholder="Confirm Password" onchange="passwordMatch()" required>
                 <input type="submit" value="Sign Up">
-                <p class="text-sign-in">Already have an account?<a href="#" id="sign-in-link">Sign In Now!</a></p>
+                <p class="text-sign-in">Already have an account?<a id="sign-in-link">Sign In Now!</a></p>
             </form>
         </div>
     </main>

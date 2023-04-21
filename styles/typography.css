@@ -92,3 +92,18 @@ textarea {
     font-size: 1.2em;
     color: var(--cl-body-font);
 }
+
+.logo-text {
+    font-family: 'Aktiv Grotesk Ex Bold';
+    margin-left: 0.5em;
+}
+
+input[type=text],
+input[type=password] {
+    font-size: 1.1em;
+    color: var(--cl-body-font);
+}
+
+.form input[type=submit] {
+    font-size: 1em;
+}

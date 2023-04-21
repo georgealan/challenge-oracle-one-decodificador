@@ -289,9 +289,22 @@ textarea:focus {
 }
 
 .form input {
-    margin: 0 0 1.5em 0;
-    padding: 1.4em;
+    margin: 0 0 1em 0;
+    padding: 0.7em;
     border-radius: 0.4em;
+    border: 1px solid var(--cl-400);
+}
+
+.form input:focus {
+    outline: none !important;
+    border: 2px solid var(--cl-500);
+}
+
+.form input[type=submit] {
+    margin: 1em 0 1em 0;
+    padding: 0.9em;
+    border-radius: 0.4em;
+    border: 0;
 }
 
 .form-header {
@@ -310,3 +323,12 @@ textarea:focus {
     color: var(--cl-error-border);
     margin-right: 0.4em;
 }
+
+#sign-up-link,
+#sign-in-link {
+    margin-left: 0.5em;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* TODO - It only remains to work on the responsiveness of mobile and tablet */
