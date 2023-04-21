@@ -14,7 +14,7 @@
 <body>
     <header id="header">
         <nav id="navigation" class="nav">
-            <img class="logo-icon" src="assets/images/Logo-TxCrypt.svg" alt="TxCrypt logo"><span class="logo-text">TxCrypt</span>
+            <img class="logo-icon" src="assets/images/Logo-TxCrypt.svg" alt="TxCrypt logo"><img id="logo-text" class="logo-text" src="assets/images/Logo-TxCrypt-Text-Black.svg">
             <a id="logout-link" class="hide" href="#">Logout</a>
             <img id="icon-toggle-theme" src="assets/icons/moon.svg" alt="icon image of sun and moon to change site theme to dark or light">
         </nav>
@@ -35,8 +35,8 @@
             <span id="error-message"></span>
             <textarea id="text-input" class="textarea-input"></textarea>
             <div class="textarea-btn">
-                <button id="encrypt" class="btn"><i class="fa-solid fa-lock"></i>ENCRIPT</button>
-                <button id="decrypt"><i class="fa-solid fa-lock-open"></i>DECRIPT</button>
+                <button id="encrypt" class="btn"><i class="fa-solid fa-lock"></i><span class="btn-txt-textarea">ENCRIPT</span></button>
+                <button id="decrypt"><i class="fa-solid fa-lock-open"></i><span class="btn-txt-textarea">DECRIPT</span></button>
             </div>
             
             <textarea id="result" class="textarea-result" readonly></textarea>
@@ -48,7 +48,7 @@
         <dialog class="modal" id="modal">
             <div class="modal-header">
                 <h2></h2>
-                <button class="btn-modal-copy-text"><i class="fa-solid fa-copy"></i>COPY</button>
+                <button class="btn-modal-copy-text"><i class="fa-solid fa-copy"></i><span class="btn-txt-modal">COPY</span></button>
                 <button class="btn-close-modal">X</button>
             </div>
             <p></p>

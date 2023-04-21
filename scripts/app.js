@@ -427,15 +427,26 @@ function createEventListener() {
     /* Welcome Text when user log in */
     if(today.getHours() >= 0 && today.getHours() <= 5) {
         welcomeText = 'Good evening my friend ' + userLoggedName + '! welcome to the system';
+        removeGreetings();
     } else if(today.getHours() > 5 && today.getHours() <= 12) {
         welcomeText = 'Good morning my friend ' + userLoggedName + '! welcome to the system';
+        removeGreetings();
     } else if(today.getHours() > 12 && today.getHours() <= 18) {
         welcomeText = 'Good afternoon my friend ' + userLoggedName + '! welcome to the system';
+        removeGreetings();
     } else if(today.getHours() > 18 && today.getHours() <= 23) {
         welcomeText = 'Good evening my friend ' + userLoggedName + '! welcome to the system';
+        removeGreetings();
     }
-    
+
     systemGreetings.innerText = welcomeText;
+    
+    function removeGreetings() {
+        setTimeout(() => {
+            welcomeText = '';
+            systemGreetings.innerText = welcomeText;
+        }, 15000);
+    }
 }
 
 window.onload = function() { 

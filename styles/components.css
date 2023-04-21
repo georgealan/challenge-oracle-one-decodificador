@@ -19,6 +19,7 @@
 
 .logo-text {
     margin-right: auto;
+    width: 100px;
 }
 
 .nav #icon-toggle-theme {
@@ -331,4 +332,104 @@ textarea:focus {
     text-decoration: underline;
 }
 
-/* TODO - It only remains to work on the responsiveness of mobile and tablet */
+/* MEDIA QUERIES */
+@media (max-width: 865px) {
+    .box-links {
+        flex-direction: column;
+    }
+
+    .buttons-wrapp {
+        align-self: flex-start; 
+    }
+}
+
+@media (max-width: 720px) {
+    .container {
+        flex-direction: column-reverse;
+    }
+
+    .wrapp {
+        width: 100vw;
+    }
+
+    #main-content {
+        width: 100vw;
+    }
+
+    #main-login-page {
+        flex-direction: column;
+    }
+
+    .form-container {
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    .presentation-container {
+        display: none;
+    }
+
+    .modal {
+        width: 90vw;
+        height: 80vh;  
+    }
+
+    .btn-close-modal {
+        width: 50px;
+    }
+
+    .btn-txt-modal {
+        display: none;
+    }
+}
+
+@media (max-width: 465px) {
+    .modal-header {
+        flex-direction: column-reverse;
+    }
+
+    .modal-header h2 {
+        margin-top: 1em;
+    }
+
+    .btn-modal-copy-text {
+        width: 50px;
+        align-self: flex-start;
+        margin-top: -41px;
+    }
+
+    .btn-close-modal {
+        align-self: flex-end;
+    }
+}
+
+@media (max-width: 345px) {
+    .box-links {
+        flex-direction: column;
+    }
+
+    .buttons-wrapp {
+        align-self: flex-start; 
+    }
+
+    .presentation-container {
+        display: none;
+    }
+
+    .logo-text {
+        display: none;
+    }
+
+    .logo-icon {
+        margin-right: auto;
+    }
+
+    .modal {
+        width: 90vw;
+        height: 80vh;  
+    }
+
+    .btn-txt-textarea {
+        display: none;
+    }
+}
