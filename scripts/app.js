@@ -415,13 +415,13 @@ function createEventListener() {
 
     function verifyUserLogged() {
         if(userLoggedName === null || userLoggedName === '') {
-            window.location.replace('/');
+            window.location.replace('https://georgealan.github.io/challenge-oracle-one-decodificador/');
         }
     }
 
     linkLogout.addEventListener('click', () => {
         localStorage.setItem('userLogged', '');
-        window.location.replace('/');
+        window.location.replace('https://georgealan.github.io/challenge-oracle-one-decodificador/');
     });
 
     /* Welcome Text when user log in */
