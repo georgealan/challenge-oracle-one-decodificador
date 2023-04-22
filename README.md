@@ -1,13 +1,14 @@
 # Challenge Oracle ONE - Text Encrypt
+Link do Projeto Online: [https://georgealan.github.io/challenge-oracle-one-decodificador/](https://georgealan.github.io/challenge-oracle-one-decodificador/)
 
 ![](https://raw.githubusercontent.com/georgealan/challenge-oracle-one-decodificador/main/assets/img-readme/gif-01.gif)
 
 This project was developed for the Oracle ONE course challenge. I used it to practice manipulating DOM elements with JavaScript, so I went beyond what was asked in the exercise. I didn't work on a Figma file to create the design because, since it was a very simple exercise, I didn't see the need for it. The only thing I did was some initial sketches on paper, a basic wireframe to help put what I wanted to do on paper and visualize the system as a whole. This helped me come up with the final design.
 
-![](https://raw.githubusercontent.com/georgealan/challenge-oracle-one-decodificador/main/assets/img-readme/sketch-wireframe.jpg)
-
 ## Wireframe
 After sketching out what I had in mind for the project, I began developing the HTML structure along with the CSS and JS. I tested my ideas on paper to see if they were possible, and all of them were achievable using JS.
+
+![](https://raw.githubusercontent.com/georgealan/challenge-oracle-one-decodificador/main/assets/img-readme/sketch-wireframe.jpg)
 
 ## Development Steps
 I developed the entire core of the system with JS, and once everything was functioning properly, I uploaded the system without styles or responsiveness to this GitHub repository. The final step was to style the system with two color themes: light and dark. I used a monochromatic color system, which is simpler to work with in simple projects. After styling the colors and elements, I started working on adjusting the responsiveness for mobile devices. This was a simple step, where I needed to make small adjustments to some parts. If you look at the code, the @media query is very small. Creating a well-organized structure from the beginning helps a lot in structuring the layout for mobile later, even if you don't follow mobile-first. Additionally, CSS Flexbox is very flexible and easy to work with.
