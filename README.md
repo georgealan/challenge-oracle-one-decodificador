@@ -1,5 +1,5 @@
 # Challenge Oracle ONE - Text Encrypt
-Link do Projeto Online: [https://georgealan.github.io/challenge-oracle-one-decodificador/](https://georgealan.github.io/challenge-oracle-one-decodificador/)
+Online project link: [https://georgealan.github.io/challenge-oracle-one-decodificador/](https://georgealan.github.io/challenge-oracle-one-decodificador/)
 
 ![](https://raw.githubusercontent.com/georgealan/challenge-oracle-one-decodificador/main/assets/img-readme/gif-01.gif)
 
